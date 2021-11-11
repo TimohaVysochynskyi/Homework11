@@ -1,0 +1,136 @@
+body {
+  position: relative;
+  width: 1400px;
+  height: 1318px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin-left: 237px;
+  margin-right: 237px;
+}
+
+.header {
+  margin-top: 20px;
+  width: 1200px;
+  height: 39px;
+}
+
+.logo {
+  float: left;
+  transition: 0.8s;
+}
+
+.logo:hover {
+  transition: 0.5s;
+  transform: scale(1.15);
+}
+
+.nav {
+  float: right;
+}
+
+.link {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 40px;
+}
+.link-active {
+  color: #fed136;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.links {
+  color: #fed136;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.links:hover {
+  transition: 0.3s;
+  color: orange;
+  font-weight: bold;
+}
+
+.active {
+  border: 2px #fed136 solid;
+}
+.active:hover {
+  animation: active-anim 0.5s;
+}
+
+.services {
+  width: 1200px;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.services-h1 {
+  margin-left: 30%;
+  color: #222222;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+  transition: 1s;
+}
+.services-h1:hover {
+  transition: 1s;
+  transform: rotate(5deg);
+  color: orangered;
+}
+
+.service {
+  width: 294px;
+}
+
+.service-img {
+  width: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  animation: image-pulse 2s infinite;
+  transition: 1s;
+}
+
+.service-h3 {
+  text-align: center;
+}
+.service-p {
+  color: grey;
+  text-align: center;
+}
+
+@keyframes image-pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes active-anim {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+    transform: scale(1.05);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+}
